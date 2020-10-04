@@ -1,0 +1,15 @@
+
+
+//Write your code here
+class Calculator {
+    
+    
+        public int power(int n,int p) throws Exception{    
+                if(n>=0 && p>=0){
+                    int a = (int)Math.pow(n,p);
+                    return a;
+                }else{
+                    throw new Exception("n and p should be non-negative");
+                }   
+    }
+}
