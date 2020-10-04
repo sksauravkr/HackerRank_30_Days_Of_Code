@@ -1,0 +1,23 @@
+
+
+	// Add your code here
+    Difference(int[] elements){
+        this.elements =elements;
+    }
+    
+    public void computeDifference(){
+
+        for(int i=0;i<elements.length-1;i++){
+                for(int j=0;j<elements.length-i-1;j++){
+                    if(elements[j]>elements[j+1]){
+                        int temp=elements[j+1];
+                        elements[j+1]=elements[j];
+                        elements[j]=temp;
+                    }
+                }
+        }
+
+        maximumDifference=Math.abs(elements[(elements.length-1)]-elements[0]);
+    }
+   
+
