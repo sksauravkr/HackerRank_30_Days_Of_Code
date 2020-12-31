@@ -1,0 +1,21 @@
+public class Solution {
+    // Write your code here.
+    Stack<Character> st = new Stack<>();
+    Queue<Character> qu = new LinkedList<>();
+    
+    public void pushCharacter(char c){
+        st.push(c);
+    }
+    
+    public void enqueueCharacter(char c){
+        qu.add(c);
+    }
+    
+    public char popCharacter(){
+        return st.pop();
+    }
+    
+    public char dequeueCharacter(){
+        return qu.remove();
+    }
+    
